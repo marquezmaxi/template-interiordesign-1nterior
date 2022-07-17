@@ -1,0 +1,378 @@
+*{font-family: 'Lexend Deca', sans-serif;}
+html{scroll-behavior: smooth;}
+
+/*Estilos generales*/
+h1{user-select: none;}
+h2{font-size: 2.2rem; user-select: none;}
+h3{font-size: 2.6rem; user-select: none;}
+h4{font-size: 2.7rem; user-select: none;}
+h5{font-size: 1.8rem; user-select: none;}
+button{
+	color: white;
+	background: #9838a7;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(30, 30, 30, 0.9);
+	transition: all 0.2s;
+}
+
+/*Encabezado de página*/
+header{
+	background: rgb(235, 235, 235);
+}
+
+.header-container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 8px;
+}
+
+.header-container h1{
+	font-weight: bold;
+	margin: 0;
+	color: #9838a7;
+	font-size: 3rem;
+}
+
+.nav{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 5px;
+}
+
+.nav a{
+	text-decoration: none;
+	font-size: 1.1rem;
+	color: black;
+	margin-top: 10px;
+	font-weight: bold;
+	transition: all 0.15s;
+}
+
+.nav a:hover{
+	color: #9838a7;
+}
+
+/*Hero de página*/
+#hero{
+	height: 100vh;
+	color: white;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(0deg, rgba(0,0,0,0.61), rgba(0,0,0,0.61)) ,url(images/wallpaperbetter.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#hero h2{
+	padding: 20px;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#hero button{
+	font-size: 1.5rem;
+	transition: all 0.2s;
+}
+
+#hero button:hover{
+	background: #ae40bf;
+}
+
+/*Información sobre autores*/
+#somosinterior{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+#somosinterior div{
+	margin: auto;
+	padding: 15px;
+}
+
+#somosinterior h3{
+	padding: 15px;
+}
+
+#somosinterior span{
+	color: #9838a7;
+}
+
+#somosinterior p{
+	font-size: 1.2rem;
+}
+
+/*Proyectos*/
+#proyectos{
+	width: 100%;
+	height: 100vh;
+	background: rgb(50, 50, 50);
+	color: white;
+	padding: 15px 0px;
+}
+
+#proyectos .container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: space-evenly;
+}
+
+#proyectos .container h4{
+	padding: 8px 0px;
+	background: #9838a7;
+	font-weight: bold;
+	width: 100%;
+}
+
+#proyectos p{
+	display: none;
+}
+
+#proyectos .container__cards{
+	padding: 15px;
+	margin: 12px;
+	width: 80%;
+	border-radius: 10px;
+	background-size: cover;
+	background-position: center;
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#proyectos button:hover{
+	background: #ae40bf;
+}
+
+#proyectos .container__cards h5{
+	padding: 10px;
+}
+
+#proyectos .container__cards:nth-child(2){
+	background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/card1.jpg);
+}
+
+#proyectos .container__cards:nth-child(3){
+	background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/card2.jpg);
+}
+
+#proyectos .container__cards:nth-child(4){
+	background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/card3.jpg);
+}
+
+/*Sección de lista*/
+#lista{
+	width: 100%;
+	height: 100vh;
+}
+
+.lista__container{
+	width: 100%;
+	height: 100%;
+}
+
+.lista__container ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 1.7rem;
+	padding: 5px;
+}
+
+.lista__container p{
+	margin: 30px;
+	font-size: 2.4rem;
+	font-weight: bold;
+}
+
+.lista__container i{
+	text-align: center;
+	margin-right: 8px;
+	color: #9838a7;
+}
+
+/*Sección de contacto*/
+#contacto{
+	width: 100%;
+	height: 100vh;
+	background: rgb(50, 50, 50);
+}
+
+#contacto .container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+#contacto .container p{
+	font-size: 3rem;
+	padding: 5px;
+	color: white;
+	font-weight: bold;
+}
+
+#contacto .container span{
+	color: #9838a7;
+}
+
+#contacto input{
+	color: white;
+	width: 80%;
+	padding: 10px;
+	margin: 8px;
+	background: rgb(80, 80, 80);
+	border: none;
+	border-radius: 10px;
+}
+
+#contacto input:focus{
+	outline: none;
+}
+
+#contacto input:focus::placeholder{
+	color: transparent;
+}
+
+#contacto textarea{
+	color: white;
+	width: 80%;
+	padding: 10px;
+	margin: 8px;
+	resize: none;
+	height: 50%;
+	background: rgb(80, 80, 80);
+	border: none;
+	border-radius: 10px;
+}
+
+#contacto textarea:focus{
+	outline: none;
+}
+
+#contacto textarea:focus::placeholder{
+	color: transparent;
+}
+
+#contacto button{
+	width: 80%;
+	box-shadow: none;
+	border-radius: 10px;
+}
+
+#contacto button:hover{
+	background: #ae40bf;
+}
+
+/*Footer*/
+footer{
+	width: 100%;
+	height: 100%;
+}
+
+footer div{
+	background: rgb(235, 235, 235);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px 0px;
+}
+
+footer ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	list-style: none;
+	justify-content: center;
+}
+
+footer p{
+	text-align: center;
+	font-size: 1.2rem;
+	color: rgb(130, 130, 130);
+}
+
+footer i{
+	color: rgb(130, 130, 130);
+	margin-top: 12px;
+	padding: 0px 30px;
+	font-size: 1.68rem;
+}
+
+/*Media queries*/
+/*Tablet*/
+@media only screen and (min-width: 768px){
+	.header-container{
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 10px;
+	}
+	
+	.nav{
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.nav a{
+		margin: 0 10px;
+	}
+
+	.container p{
+		margin: 0 30px;
+	}
+}
+
+/*Laptop*/
+@media only screen and (min-width: 1024px){
+	.header-container{
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 10px 40px;
+	}
+	
+	.nav{
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.nav a{
+		margin: 0 20px;
+	}
+
+	#proyectos .container__cards{
+		padding: 20px;
+	}
+}
+
+/*Laptop L*/
+@media only screen and (min-width: 1440px){
+	*{
+		font-size: 1.4rem;
+	}
+
+	span{
+		font-size: 1em;
+	}
+}
